@@ -1,0 +1,196 @@
+.methodology-section {
+    padding: 100px 0;
+    background: white;
+    text-align: center;
+}
+
+.methodology-header h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 4rem;
+    font-style: italic;
+    font-family: serif;
+    /* Simulate the distinct font style in image */
+}
+
+/* Grid Layout for Desktop */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.method-item {
+    text-align: left;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.method-item:hover {
+    transform: translateY(-5px);
+}
+
+.method-item h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.method-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background: var(--light-blue);
+    color: var(--primary-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific positioning visual cues if strictly following layout */
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-right {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bottom-right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.center-graphic {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.big-a {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #0056d2;
+    text-shadow:
+        0 10px 0 #002b6b,
+        0 20px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1;
+}
+
+.center-card {
+    margin-top: -40px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    max-width: 250px;
+}
+
+.center-card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.center-card p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+    .methodology-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .method-item,
+    .top-left,
+    .bottom-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .methodology-header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 3rem;
+    }
+
+    .methodology-section {
+        padding: 60px 0;
+    }
+
+    .big-a {
+        font-size: 8rem;
+    }
+}
+
+.methodology-stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e6f0ff 100%);
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .methodology-stats-container {
+        padding: 1.5rem;
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
+    .method-stat-value {
+        font-size: 2rem !important;
+    }
+}
+
+.method-stat-item {
+    text-align: center;
+}
+
+.method-stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.method-stat-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
