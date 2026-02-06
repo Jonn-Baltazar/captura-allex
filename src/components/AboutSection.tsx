@@ -7,7 +7,7 @@ const AboutSection = () => {
             <div className="container about-container">
                 <div className="about-image-wrapper">
                     <img
-                        src="/src/assets/alex-profile.jpg"
+                        src="/src/assets/alexAbout.webp"
                         alt="Alex Santana"
                         className="about-image"
                         onError={(e) => {
