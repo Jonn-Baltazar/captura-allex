@@ -6,7 +6,7 @@ const Hero = () => {
         <section className="hero">
             <div className="hero-bg-accent"></div>
             <div className="container hero-content">
-                <div className="hero-badge">🔴 WEBINÁRIO AO VIVO | 10 de Fevereiro às 20h</div>
+                <div className="hero-badge">🔴 WEBINÁRIO AO VIVO | 11 de Fevereiro às 20h</div>
                 <h1>
                     Transforme sua clínica em uma <br />
                     <span className="gradient-text">Máquina Previsível de Lucro</span> <br />
